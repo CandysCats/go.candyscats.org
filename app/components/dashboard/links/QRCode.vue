@@ -10,18 +10,18 @@ const props = withDefaults(defineProps<{
 })
 const color = ref('#000000')
 const options = {
-  width: 256,
-  height: 256,
+  width: 300,
+  height: 300,
   data: props.data,
   type: 'svg' as const,
   margin: 10,
-  qrOptions: { typeNumber: 0 as const, mode: 'Byte' as const, errorCorrectionLevel: 'Q' as const },
-  imageOptions: { hideBackgroundDots: true, imageSize: 0.4, margin: 2 },
-  dotsOptions: { type: 'dots' as const, color: '#000000' },
-  backgroundOptions: { color: '#ffffff' },
-  image: props.image,
-  cornersSquareOptions: { type: 'extra-rounded' as const, color: '#000000' },
-  cornersDotOptions: { type: 'dot' as const, color: '#000000' },
+  qrOptions: { typeNumber: 0 as const, mode: 'Byte' as const, errorCorrectionLevel: 'H' as const },
+  imageOptions: { hideBackgroundDots: true, imageSize: 0.25, margin: 4 },
+  dotsOptions: { type: 'square' as const, color: '#274C59' },
+  backgroundOptions: { color: 'transparent' },
+  image: props.image || 'http://www-dev.candyscats.org/favicon.ico',
+  cornersSquareOptions: { type: 'square' as const, color: '#274C59' },
+  cornersDotOptions: { type: 'square' as const, color: '#274C59' },
 }
 
 const qrCode = new QRCodeStyling(options)
