@@ -8,7 +8,7 @@ const props = withDefaults(defineProps<{
 }>(), {
   image: '',
 })
-const color = ref('#000000')
+const color = ref('#274C59')
 const options = {
   width: 300,
   height: 300,
@@ -16,10 +16,10 @@ const options = {
   type: 'svg' as const,
   margin: 10,
   qrOptions: { typeNumber: 0 as const, mode: 'Byte' as const, errorCorrectionLevel: 'H' as const },
-  imageOptions: { hideBackgroundDots: true, imageSize: 0.25, margin: 4 },
+  imageOptions: { hideBackgroundDots: true, imageSize: 0.25, margin: 5 },
   dotsOptions: { type: 'square' as const, color: '#274C59' },
   backgroundOptions: { color: 'transparent' },
-  image: props.image || 'http://www-dev.candyscats.org/favicon.ico',
+  image: props.image || '/iconmark_transparentbg_brand.png',
   cornersSquareOptions: { type: 'square' as const, color: '#274C59' },
   cornersDotOptions: { type: 'square' as const, color: '#274C59' },
 }
