@@ -19,7 +19,7 @@ const options = {
   imageOptions: { hideBackgroundDots: true, imageSize: 0.25, margin: 5 },
   dotsOptions: { type: 'square' as const, color: '#274C59' },
   backgroundOptions: { color: 'transparent' },
-  image: props.image || '/iconmark_transparentbg_brand.png',
+  image: props.image || 'https://go.candyscats.org/iconmark_transparentbg_brand.png',
   cornersSquareOptions: { type: 'square' as const, color: '#274C59' },
   cornersDotOptions: { type: 'square' as const, color: '#274C59' },
 }
