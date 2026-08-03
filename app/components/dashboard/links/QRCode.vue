@@ -13,7 +13,7 @@ const options = {
   width: 300,
   height: 300,
   data: props.data,
-  type: 'svg' as const,
+  type: 'canvas' as const,
   margin: 10,
   qrOptions: { typeNumber: 0 as const, mode: 'Byte' as const, errorCorrectionLevel: 'H' as const },
   imageOptions: { hideBackgroundDots: true, imageSize: 0.25, margin: 5 },
