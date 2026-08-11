@@ -29,22 +29,40 @@ useHead(() => ({
     },
     {
       name: 'theme-color',
-      content: colorMode.value === 'dark' ? '#09090b' : '#ffffff',
+      content: colorMode.value === 'dark' ? '#0c212a' : '#ffffff',
     },
   ],
   link: [
     {
       rel: 'canonical',
-      href: computed(() => `https://sink.cool${route.path}`),
+      href: computed(() => `https://go.candyscats.org${route.path}`),
+    },
+    {
+      rel: 'icon',
+      type: 'image/x-icon',
+      href: '/favicon.ico',
+      sizes: '48x48',
+    },
+    {
+      rel: 'icon',
+      type: 'image/png',
+      href: '/favicon-32x32.png',
+      sizes: '32x32',
     },
     {
       rel: 'icon',
       type: 'image/png',
       href: '/icon-192.png',
+      sizes: '192x192',
     },
     {
       rel: 'apple-touch-icon',
       href: '/apple-touch-icon.png',
+      sizes: '180x180',
+    },
+    {
+      rel: 'manifest',
+      href: '/site.webmanifest',
     },
   ],
 }))

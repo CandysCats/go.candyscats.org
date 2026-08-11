@@ -88,8 +88,8 @@ export default defineNuxtConfig({
     openAPI: {
       production: 'runtime',
       meta: {
-        title: 'Sink API',
-        description: 'A Simple / Speedy / Secure Link Shortener with Analytics, 100% run on Cloudflare.\n\n[Return to this Sink instance](/) · [Read the documentation](https://docs.sink.cool)',
+        title: "Candy's Cats Links API",
+        description: "The link shortener behind go.candyscats.org, built on Sink and running on Cloudflare.\n\n[Return to Candy's Cats Links](/) · [Read the Sink documentation](https://docs.sink.cool)",
       },
       route: '/_docs/openapi.json',
       ui: {

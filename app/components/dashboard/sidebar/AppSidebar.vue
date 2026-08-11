@@ -58,15 +58,15 @@ const settingsItems = computed<NavItem[]>(() => [
               <div
                 class="
                   flex aspect-square size-8 items-center justify-center
-                  rounded-full
+                  rounded-full bg-white ring-1 ring-border
                 "
               >
                 <img
-                  src="/sink.png"
+                  src="/paw.png"
                   alt=""
-                  width="32"
-                  height="32"
-                  class="size-8 rounded-full"
+                  width="20"
+                  height="20"
+                  class="size-5"
                 >
               </div>
               <div class="grid flex-1 text-left text-sm/tight">

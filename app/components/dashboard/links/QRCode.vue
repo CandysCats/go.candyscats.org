@@ -9,10 +9,11 @@ const props = withDefaults(defineProps<{
   image: '',
 })
 
-const color = ref('#274C59')
+// Marea Baja, the Candy's Cats primary brand colour
+const color = ref('#2E5464')
 
 // Resolve image path safely
-const logoUrl = computed(() => props.image && props.image.trim() !== '' ? props.image : '/icon.png')
+const logoUrl = computed(() => props.image && props.image.trim() !== '' ? props.image : '/logo-paw.png')
 
 const options = {
   width: 300,

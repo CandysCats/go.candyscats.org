@@ -46,79 +46,98 @@
   --font-heading: var(--font-sans);
 }
 
+/*
+ * Candy's Cats brand palette (Brand Guidelines v1.0, July 2026)
+ *
+ *   Marea Baja    SW9185  #2E5464  primary: logo, headlines, buttons
+ *   Blithe Blue   SW9052  #90BDBD  secondary accent (backgrounds, not text)
+ *   Deep Marea            #244350  body text, footers
+ *   Soft Blithe           #D2E4E4  cards, dividers, hover states
+ *   Pale Neutral          #EFF5F5  page backgrounds, alternating rows
+ *   White                 #FFFFFF  reversed logo, negative space
+ *
+ * Values below are the OKLCH equivalents of those hexes, plus shades derived
+ * from the same two hue families so nothing off-brand creeps in.
+ */
 :root {
   color-scheme: light;
   --radius: 0.625rem;
-  --card: oklch(1 0 0);
-  --card-foreground: oklch(0.141 0.005 285.823);
+  --card: oklch(1 0 0); /* White */
+  --card-foreground: oklch(0.3647 0.0431 227.02); /* Deep Marea */
   --popover: oklch(1 0 0);
-  --popover-foreground: oklch(0.141 0.005 285.823);
-  --primary: oklch(0.21 0.006 285.885);
-  --primary-foreground: oklch(0.985 0 0);
-  --secondary: oklch(0.967 0.001 286.375);
-  --secondary-foreground: oklch(0.21 0.006 285.885);
-  --muted: oklch(0.967 0.001 286.375);
-  --muted-foreground: oklch(0.552 0.016 285.938);
-  --accent: oklch(0.967 0.001 286.375);
-  --accent-foreground: oklch(0.21 0.006 285.885);
+  --popover-foreground: oklch(0.3647 0.0431 227.02);
+  --primary: oklch(0.4245 0.0508 227.17); /* Marea Baja #2E5464 */
+  --primary-foreground: oklch(1 0 0);
+  --secondary: oklch(0.9055 0.0192 196.82); /* Soft Blithe #D2E4E4 */
+  --secondary-foreground: oklch(0.3647 0.0431 227.02);
+  --muted: oklch(0.9656 0.0064 197.05); /* Pale Neutral #EFF5F5 */
+  --muted-foreground: oklch(0.53 0.042 224);
+  --accent: oklch(0.9055 0.0192 196.82); /* Soft Blithe */
+  --accent-foreground: oklch(0.3647 0.0431 227.02);
   --success: oklch(0.55 0.16 145);
   --success-foreground: oklch(0.985 0 0);
   --destructive: oklch(0.577 0.245 27.325);
-  --border: oklch(0.92 0.004 286.32);
-  --input: oklch(0.92 0.004 286.32);
-  --ring: oklch(0.705 0.015 286.067);
-  --chart-1: oklch(0.871 0.15 154.449);
-  --chart-2: oklch(0.723 0.219 149.579);
-  --chart-3: oklch(0.627 0.194 149.214);
-  --chart-4: oklch(0.527 0.154 150.069);
-  --chart-5: oklch(0.448 0.119 151.328);
-  --sidebar: oklch(0.985 0 0);
-  --sidebar-foreground: oklch(0.141 0.005 285.823);
-  --sidebar-primary: oklch(0.21 0.006 285.885);
-  --sidebar-primary-foreground: oklch(0.985 0 0);
-  --sidebar-accent: oklch(0.967 0.001 286.375);
-  --sidebar-accent-foreground: oklch(0.21 0.006 285.885);
-  --sidebar-border: oklch(0.92 0.004 286.32);
-  --sidebar-ring: oklch(0.705 0.015 286.067);
+  --border: oklch(0.89 0.02 200);
+  --input: oklch(0.89 0.02 200);
+  --ring: oklch(0.4245 0.0508 227.17); /* Marea Baja */
+  --chart-1: oklch(0.9055 0.0192 196.82); /* Soft Blithe */
+  --chart-2: oklch(0.7663 0.0476 196.2); /* Blithe Blue #90BDBD */
+  --chart-3: oklch(0.63 0.065 208);
+  --chart-4: oklch(0.51 0.058 220);
+  --chart-5: oklch(0.4245 0.0508 227.17); /* Marea Baja */
+  --sidebar: oklch(0.9656 0.0064 197.05); /* Pale Neutral */
+  --sidebar-foreground: oklch(0.3647 0.0431 227.02);
+  --sidebar-primary: oklch(0.4245 0.0508 227.17);
+  --sidebar-primary-foreground: oklch(1 0 0);
+  --sidebar-accent: oklch(0.9055 0.0192 196.82);
+  --sidebar-accent-foreground: oklch(0.3647 0.0431 227.02);
+  --sidebar-border: oklch(0.89 0.02 200);
+  --sidebar-ring: oklch(0.4245 0.0508 227.17);
   --background: oklch(1 0 0);
-  --foreground: oklch(0.141 0.005 285.823);
+  --foreground: oklch(0.3647 0.0431 227.02); /* Deep Marea #244350 */
 }
 
+/*
+ * Dark theme: deep shades of Marea Baja carry the surfaces, and Blithe Blue
+ * becomes the primary accent. Per the guidelines Blithe Blue is a light, muted
+ * tone, so it is always paired with Deep Marea on top rather than used as text.
+ */
 .dark {
   color-scheme: dark;
-  --background: oklch(0.141 0.005 285.823);
-  --foreground: oklch(0.985 0 0);
-  --card: oklch(0.21 0.006 285.885);
-  --card-foreground: oklch(0.985 0 0);
-  --popover: oklch(0.21 0.006 285.885);
-  --popover-foreground: oklch(0.985 0 0);
-  --primary: oklch(0.92 0.004 286.32);
-  --primary-foreground: oklch(0.21 0.006 285.885);
-  --secondary: oklch(0.274 0.006 286.033);
-  --secondary-foreground: oklch(0.985 0 0);
-  --muted: oklch(0.274 0.006 286.033);
-  --muted-foreground: oklch(0.705 0.015 286.067);
-  --accent: oklch(0.274 0.006 286.033);
-  --accent-foreground: oklch(0.985 0 0);
+  --background: oklch(0.235 0.032 228);
+  --foreground: oklch(0.9656 0.0064 197.05); /* Pale Neutral */
+  --card: oklch(0.285 0.034 228);
+  --card-foreground: oklch(0.9656 0.0064 197.05);
+  --popover: oklch(0.285 0.034 228);
+  --popover-foreground: oklch(0.9656 0.0064 197.05);
+  --primary: oklch(0.7663 0.0476 196.2); /* Blithe Blue #90BDBD */
+  --primary-foreground: oklch(0.26 0.035 228);
+  --secondary: oklch(0.335 0.036 228);
+  --secondary-foreground: oklch(0.9656 0.0064 197.05);
+  --muted: oklch(0.315 0.034 228);
+  --muted-foreground: oklch(0.735 0.03 205);
+  --accent: oklch(0.355 0.038 225);
+  --accent-foreground: oklch(0.9656 0.0064 197.05);
   --success: oklch(0.72 0.17 145);
   --success-foreground: oklch(0.18 0.04 145);
   --destructive: oklch(0.704 0.191 22.216);
-  --border: oklch(1 0 0 / 10%);
-  --input: oklch(1 0 0 / 15%);
-  --ring: oklch(0.552 0.016 285.938);
-  --chart-1: oklch(0.871 0.15 154.449);
-  --chart-2: oklch(0.723 0.219 149.579);
-  --chart-3: oklch(0.627 0.194 149.214);
-  --chart-4: oklch(0.527 0.154 150.069);
-  --chart-5: oklch(0.448 0.119 151.328);
-  --sidebar: oklch(0.21 0.006 285.885);
-  --sidebar-foreground: oklch(0.985 0 0);
-  --sidebar-primary: oklch(0.488 0.243 264.376);
-  --sidebar-primary-foreground: oklch(0.985 0 0);
-  --sidebar-accent: oklch(0.274 0.006 286.033);
-  --sidebar-accent-foreground: oklch(0.985 0 0);
-  --sidebar-border: oklch(1 0 0 / 10%);
-  --sidebar-ring: oklch(0.552 0.016 285.938);
+  --border: oklch(0.9656 0.0064 197.05 / 12%);
+  --input: oklch(0.9656 0.0064 197.05 / 16%);
+  --ring: oklch(0.62 0.05 205);
+  /* Same light-to-dark brand ramp, shifted up so every step reads on dark surfaces. */
+  --chart-1: oklch(0.9055 0.0192 196.82); /* Soft Blithe */
+  --chart-2: oklch(0.82 0.035 197);
+  --chart-3: oklch(0.7663 0.0476 196.2); /* Blithe Blue */
+  --chart-4: oklch(0.68 0.06 202);
+  --chart-5: oklch(0.6 0.065 210);
+  --sidebar: oklch(0.265 0.033 228);
+  --sidebar-foreground: oklch(0.9656 0.0064 197.05);
+  --sidebar-primary: oklch(0.7663 0.0476 196.2);
+  --sidebar-primary-foreground: oklch(0.26 0.035 228);
+  --sidebar-accent: oklch(0.355 0.038 225);
+  --sidebar-accent-foreground: oklch(0.9656 0.0064 197.05);
+  --sidebar-border: oklch(0.9656 0.0064 197.05 / 12%);
+  --sidebar-ring: oklch(0.62 0.05 205);
 }
 
 @layer base {

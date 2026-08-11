@@ -61,13 +61,18 @@ function closeMobileMenu() {
               :aria-label="$t('layouts.links.home_aria_label')"
               class="flex items-center space-x-2"
             >
-              <span class="flex size-8 items-center justify-center rounded-full">
+              <span
+                class="
+                  flex size-8 items-center justify-center rounded-full bg-white
+                  ring-1 ring-border
+                "
+              >
                 <img
-                  src="/sink.png"
+                  src="/paw.png"
                   :alt="`${title} Logo`"
-                  width="32"
-                  height="32"
-                  class="size-full rounded-full"
+                  width="20"
+                  height="20"
+                  class="size-5"
                 >
               </span>
               <span class="text-xl font-black">{{ title }}</span>
@@ -259,14 +264,17 @@ function closeMobileMenu() {
           >
             <div class="flex items-center space-x-2">
               <span
-                class="flex size-8 items-center justify-center rounded-full"
+                class="
+                  flex size-8 items-center justify-center rounded-full bg-white
+                  ring-1 ring-border
+                "
               >
                 <img
-                  src="/sink.png"
+                  src="/paw.png"
                   :alt="`${title} Logo`"
-                  width="32"
-                  height="32"
-                  class="size-full rounded-full"
+                  width="20"
+                  height="20"
+                  class="size-5"
                 >
               </span>
               <span class="text-xl font-black">{{ title }}</span>

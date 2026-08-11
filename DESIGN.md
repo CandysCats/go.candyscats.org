@@ -1,74 +1,74 @@
 ---
 version: alpha
-name: Sink
-description: Semantic design tokens and component guidance for the Sink interface.
+name: Candy's Cats Links
+description: Semantic design tokens and component guidance for the Candy's Cats link shortener, derived from the Candy's Cats Brand Guidelines v1.0.
 colors:
   card: "oklch(1 0 0)"
-  card-foreground: "oklch(0.141 0.005 285.823)"
+  card-foreground: "oklch(0.3647 0.0431 227.02)"
   popover: "oklch(1 0 0)"
-  popover-foreground: "oklch(0.141 0.005 285.823)"
-  primary: "oklch(0.21 0.006 285.885)"
-  primary-foreground: "oklch(0.985 0 0)"
-  secondary: "oklch(0.967 0.001 286.375)"
-  secondary-foreground: "oklch(0.21 0.006 285.885)"
-  muted: "oklch(0.967 0.001 286.375)"
-  muted-foreground: "oklch(0.552 0.016 285.938)"
-  accent: "oklch(0.967 0.001 286.375)"
-  accent-foreground: "oklch(0.21 0.006 285.885)"
+  popover-foreground: "oklch(0.3647 0.0431 227.02)"
+  primary: "oklch(0.4245 0.0508 227.17)"
+  primary-foreground: "oklch(1 0 0)"
+  secondary: "oklch(0.9055 0.0192 196.82)"
+  secondary-foreground: "oklch(0.3647 0.0431 227.02)"
+  muted: "oklch(0.9656 0.0064 197.05)"
+  muted-foreground: "oklch(0.53 0.042 224)"
+  accent: "oklch(0.9055 0.0192 196.82)"
+  accent-foreground: "oklch(0.3647 0.0431 227.02)"
   success: "oklch(0.55 0.16 145)"
   success-foreground: "oklch(0.985 0 0)"
   destructive: "oklch(0.577 0.245 27.325)"
-  border: "oklch(0.92 0.004 286.32)"
-  input: "oklch(0.92 0.004 286.32)"
-  ring: "oklch(0.705 0.015 286.067)"
-  chart-1: "oklch(0.871 0.15 154.449)"
-  chart-2: "oklch(0.723 0.219 149.579)"
-  chart-3: "oklch(0.627 0.194 149.214)"
-  chart-4: "oklch(0.527 0.154 150.069)"
-  chart-5: "oklch(0.448 0.119 151.328)"
-  sidebar: "oklch(0.985 0 0)"
-  sidebar-foreground: "oklch(0.141 0.005 285.823)"
-  sidebar-primary: "oklch(0.21 0.006 285.885)"
-  sidebar-primary-foreground: "oklch(0.985 0 0)"
-  sidebar-accent: "oklch(0.967 0.001 286.375)"
-  sidebar-accent-foreground: "oklch(0.21 0.006 285.885)"
-  sidebar-border: "oklch(0.92 0.004 286.32)"
-  sidebar-ring: "oklch(0.705 0.015 286.067)"
+  border: "oklch(0.89 0.02 200)"
+  input: "oklch(0.89 0.02 200)"
+  ring: "oklch(0.4245 0.0508 227.17)"
+  chart-1: "oklch(0.9055 0.0192 196.82)"
+  chart-2: "oklch(0.7663 0.0476 196.2)"
+  chart-3: "oklch(0.63 0.065 208)"
+  chart-4: "oklch(0.51 0.058 220)"
+  chart-5: "oklch(0.4245 0.0508 227.17)"
+  sidebar: "oklch(0.9656 0.0064 197.05)"
+  sidebar-foreground: "oklch(0.3647 0.0431 227.02)"
+  sidebar-primary: "oklch(0.4245 0.0508 227.17)"
+  sidebar-primary-foreground: "oklch(1 0 0)"
+  sidebar-accent: "oklch(0.9055 0.0192 196.82)"
+  sidebar-accent-foreground: "oklch(0.3647 0.0431 227.02)"
+  sidebar-border: "oklch(0.89 0.02 200)"
+  sidebar-ring: "oklch(0.4245 0.0508 227.17)"
   background: "oklch(1 0 0)"
-  foreground: "oklch(0.141 0.005 285.823)"
-  dark-background: "oklch(0.141 0.005 285.823)"
-  dark-foreground: "oklch(0.985 0 0)"
-  dark-card: "oklch(0.21 0.006 285.885)"
-  dark-card-foreground: "oklch(0.985 0 0)"
-  dark-popover: "oklch(0.21 0.006 285.885)"
-  dark-popover-foreground: "oklch(0.985 0 0)"
-  dark-primary: "oklch(0.92 0.004 286.32)"
-  dark-primary-foreground: "oklch(0.21 0.006 285.885)"
-  dark-secondary: "oklch(0.274 0.006 286.033)"
-  dark-secondary-foreground: "oklch(0.985 0 0)"
-  dark-muted: "oklch(0.274 0.006 286.033)"
-  dark-muted-foreground: "oklch(0.705 0.015 286.067)"
-  dark-accent: "oklch(0.274 0.006 286.033)"
-  dark-accent-foreground: "oklch(0.985 0 0)"
+  foreground: "oklch(0.3647 0.0431 227.02)"
+  dark-background: "oklch(0.235 0.032 228)"
+  dark-foreground: "oklch(0.9656 0.0064 197.05)"
+  dark-card: "oklch(0.285 0.034 228)"
+  dark-card-foreground: "oklch(0.9656 0.0064 197.05)"
+  dark-popover: "oklch(0.285 0.034 228)"
+  dark-popover-foreground: "oklch(0.9656 0.0064 197.05)"
+  dark-primary: "oklch(0.7663 0.0476 196.2)"
+  dark-primary-foreground: "oklch(0.26 0.035 228)"
+  dark-secondary: "oklch(0.335 0.036 228)"
+  dark-secondary-foreground: "oklch(0.9656 0.0064 197.05)"
+  dark-muted: "oklch(0.315 0.034 228)"
+  dark-muted-foreground: "oklch(0.735 0.03 205)"
+  dark-accent: "oklch(0.355 0.038 225)"
+  dark-accent-foreground: "oklch(0.9656 0.0064 197.05)"
   dark-success: "oklch(0.72 0.17 145)"
   dark-success-foreground: "oklch(0.18 0.04 145)"
   dark-destructive: "oklch(0.704 0.191 22.216)"
-  dark-border: "oklch(1 0 0 / 10%)"
-  dark-input: "oklch(1 0 0 / 15%)"
-  dark-ring: "oklch(0.552 0.016 285.938)"
-  dark-chart-1: "oklch(0.871 0.15 154.449)"
-  dark-chart-2: "oklch(0.723 0.219 149.579)"
-  dark-chart-3: "oklch(0.627 0.194 149.214)"
-  dark-chart-4: "oklch(0.527 0.154 150.069)"
-  dark-chart-5: "oklch(0.448 0.119 151.328)"
-  dark-sidebar: "oklch(0.21 0.006 285.885)"
-  dark-sidebar-foreground: "oklch(0.985 0 0)"
-  dark-sidebar-primary: "oklch(0.488 0.243 264.376)"
-  dark-sidebar-primary-foreground: "oklch(0.985 0 0)"
-  dark-sidebar-accent: "oklch(0.274 0.006 286.033)"
-  dark-sidebar-accent-foreground: "oklch(0.985 0 0)"
-  dark-sidebar-border: "oklch(1 0 0 / 10%)"
-  dark-sidebar-ring: "oklch(0.552 0.016 285.938)"
+  dark-border: "oklch(0.9656 0.0064 197.05 / 12%)"
+  dark-input: "oklch(0.9656 0.0064 197.05 / 16%)"
+  dark-ring: "oklch(0.62 0.05 205)"
+  dark-chart-1: "oklch(0.9055 0.0192 196.82)"
+  dark-chart-2: "oklch(0.82 0.035 197)"
+  dark-chart-3: "oklch(0.7663 0.0476 196.2)"
+  dark-chart-4: "oklch(0.68 0.06 202)"
+  dark-chart-5: "oklch(0.6 0.065 210)"
+  dark-sidebar: "oklch(0.265 0.033 228)"
+  dark-sidebar-foreground: "oklch(0.9656 0.0064 197.05)"
+  dark-sidebar-primary: "oklch(0.7663 0.0476 196.2)"
+  dark-sidebar-primary-foreground: "oklch(0.26 0.035 228)"
+  dark-sidebar-accent: "oklch(0.355 0.038 225)"
+  dark-sidebar-accent-foreground: "oklch(0.9656 0.0064 197.05)"
+  dark-sidebar-border: "oklch(0.9656 0.0064 197.05 / 12%)"
+  dark-sidebar-ring: "oklch(0.62 0.05 205)"
 typography:
   sans:
     fontFamily: "IBM Plex Sans, sans-serif"
@@ -101,7 +101,22 @@ This file is a derived summary for design-aware agents. If it conflicts with `ap
 
 ## Colors
 
-The unprefixed tokens reproduce the semantic roles in `:root`; `dark-*` tokens flatten the corresponding `.dark` values. Always use roles as intended and keep each background paired with its foreground. The green `chart-1` through `chart-5` sequence is for charts only. Use `success` for positive status and completion indicators, `ring` for focus emphasis, and `destructive` for destructive or invalid states, including their dark-mode counterparts.
+The unprefixed tokens reproduce the semantic roles in `:root`; `dark-*` tokens flatten the corresponding `.dark` values. Always use roles as intended and keep each background paired with its foreground.
+
+Every role is drawn from the Candy's Cats brand palette:
+
+| Brand name | Hex | Roles it fills |
+| --- | --- | --- |
+| Marea Baja | `#2E5464` | `primary`, `ring`, `sidebar-primary`, `chart-5` |
+| Blithe Blue | `#90BDBD` | `dark-primary`, `chart-2` |
+| Deep Marea | `#244350` | `foreground`, `card-foreground`, `secondary-foreground`, `accent-foreground` |
+| Soft Blithe | `#D2E4E4` | `secondary`, `accent`, `sidebar-accent`, `chart-1` |
+| Pale Neutral | `#EFF5F5` | `muted`, `sidebar`, `dark-foreground` |
+| White | `#FFFFFF` | `background`, `card`, `popover`, `primary-foreground` |
+
+Marea Baja is the dominant color and Blithe Blue is an accent: keep Blithe Blue to roughly a quarter of a layout at most, and never set it as body text — pair it with Deep Marea or near-black on top. Whites and pale neutrals should carry the majority of any layout's background.
+
+The `chart-1` through `chart-5` sequence is a light-to-dark ramp inside the brand's two hue families and is for charts only; the `dark-chart-*` ramp is the same sequence shifted lighter so every step stays legible on dark surfaces. Use `success` for positive status and completion indicators, `ring` for focus emphasis, and `destructive` for destructive or invalid states, including their dark-mode counterparts. `success` and `destructive` sit outside the brand palette on purpose: they are status signals, not brand color.
 
 ## Typography
 
