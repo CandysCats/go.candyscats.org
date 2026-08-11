@@ -2,18 +2,17 @@
 import { Download } from '@lucide/vue'
 import QRCodeStyling from 'qr-code-styling'
 
-const props = withDefaults(defineProps<{
+const props = defineProps<{
   data: string
-  image?: string
-}>(), {
-  image: '',
-})
+}>()
 
 // Marea Baja, the Candy's Cats primary brand colour
 const color = ref('#2E5464')
 
-// Resolve image path safely
-const logoUrl = computed(() => props.image && props.image.trim() !== '' ? props.image : '/logo-paw.png')
+// The Candy's Cats paw always sits in the centre of the code. We deliberately
+// do not use the destination site's favicon here: a QR code we print or hand
+// out should be recognisably ours, whoever it happens to point at.
+const BRAND_LOGO = '/logo-paw.png'
 
 const options = {
   width: 300,
@@ -30,7 +29,7 @@ const options = {
   },
   dotsOptions: { type: 'square' as const, color: color.value },
   backgroundOptions: { color: 'transparent' },
-  image: logoUrl.value,
+  image: BRAND_LOGO,
   cornersSquareOptions: { type: 'square' as const, color: color.value },
   cornersDotOptions: { type: 'square' as const, color: color.value },
 }
@@ -49,13 +48,6 @@ function updateColor(newColor: string) {
 // Watch color changes
 watch(color, (newColor) => {
   updateColor(newColor)
-})
-
-// Watch image prop changes dynamically
-watch(logoUrl, (newLogo) => {
-  qrCode.update({
-    image: newLogo
-  })
 })
 
 function downloadQRCode() {

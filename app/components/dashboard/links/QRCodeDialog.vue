@@ -1,10 +1,7 @@
 <script setup lang="ts">
-withDefaults(defineProps<{
+defineProps<{
   data: string
-  image?: string
-}>(), {
-  image: '',
-})
+}>()
 
 const emit = defineEmits<{
   closeAutoFocus: [event: Event]
@@ -19,6 +16,6 @@ const open = defineModel<boolean>('open', { default: false })
     :title="$t('links.download_qr_code')"
     @close-auto-focus="emit('closeAutoFocus', $event)"
   >
-    <DashboardLinksQRCode :data="data" :image="image" />
+    <DashboardLinksQRCode :data="data" />
   </ResponsiveModal>
 </template>

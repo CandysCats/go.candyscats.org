@@ -228,10 +228,7 @@ function copyLink() {
               </Button>
             </PopoverTrigger>
             <PopoverContent>
-              <DashboardLinksQRCode
-                :data="shortLink"
-                :image="linkIcon"
-              />
+              <DashboardLinksQRCode :data="shortLink" />
             </PopoverContent>
           </Popover>
 
@@ -403,7 +400,6 @@ function copyLink() {
     <DashboardLinksQRCodeDialog
       v-model:open="qrDialogOpen"
       :data="shortLink"
-      :image="linkIcon"
       @close-auto-focus="handleDialogCloseAutoFocus"
     />
     <DashboardLinksEditorModal
