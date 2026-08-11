@@ -8,7 +8,12 @@ const props = withDefaults(defineProps<{
 }>(), {
   image: '',
 })
+
 const color = ref('#274C59')
+
+// Resolve image path safely
+const logoUrl = computed(() => props.image && props.image.trim() !== '' ? props.image : '/icon.png')
+
 const options = {
   width: 300,
   height: 300,
@@ -16,12 +21,17 @@ const options = {
   type: 'svg' as const,
   margin: 10,
   qrOptions: { typeNumber: 0 as const, mode: 'Byte' as const, errorCorrectionLevel: 'H' as const },
-  imageOptions: { hideBackgroundDots: true, imageSize: 0.25, margin: 5 ,crossOrigin: 'anonymous' // 2. Explicitly allow cross-origin},
-  dotsOptions: { type: 'square' as const, color: '#274C59' },
+  imageOptions: { 
+    hideBackgroundDots: true, 
+    imageSize: 0.25, 
+    margin: 5,
+    crossOrigin: 'anonymous'
+  },
+  dotsOptions: { type: 'square' as const, color: color.value },
   backgroundOptions: { color: 'transparent' },
-  image: props.image || '/icon.png',
-  cornersSquareOptions: { type: 'square' as const, color: '#274C59' },
-  cornersDotOptions: { type: 'square' as const, color: '#274C59' },
+  image: logoUrl.value,
+  cornersSquareOptions: { type: 'square' as const, color: color.value },
+  cornersDotOptions: { type: 'square' as const, color: color.value },
 }
 
 const qrCode = new QRCodeStyling(options)
@@ -29,14 +39,22 @@ const qrCodeEl = useTemplateRef<HTMLElement>('qrCodeEl')
 
 function updateColor(newColor: string) {
   qrCode.update({
-    dotsOptions: { type: 'dots' as const, color: newColor },
-    cornersSquareOptions: { type: 'extra-rounded' as const, color: newColor },
-    cornersDotOptions: { type: 'dot' as const, color: newColor },
+    dotsOptions: { type: 'square' as const, color: newColor },
+    cornersSquareOptions: { type: 'square' as const, color: newColor },
+    cornersDotOptions: { type: 'square' as const, color: newColor },
   })
 }
 
+// Watch color changes
 watch(color, (newColor) => {
   updateColor(newColor)
+})
+
+// Watch image prop changes dynamically
+watch(logoUrl, (newLogo) => {
+  qrCode.update({
+    image: newLogo
+  })
 })
 
 function downloadQRCode() {
