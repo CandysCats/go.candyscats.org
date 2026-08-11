@@ -19,7 +19,7 @@ const options = {
   imageOptions: { hideBackgroundDots: true, imageSize: 0.25, margin: 5 ,crossOrigin: 'anonymous' // 2. Explicitly allow cross-origin},
   dotsOptions: { type: 'square' as const, color: '#274C59' },
   backgroundOptions: { color: 'transparent' },
-  image: props.image || 'https://go.candyscats.org/favicon.ico',
+  image: props.image || 'https://go.candyscats.org/icon.png',
   cornersSquareOptions: { type: 'square' as const, color: '#274C59' },
   cornersDotOptions: { type: 'square' as const, color: '#274C59' },
 }
