@@ -62,7 +62,7 @@ const settingsItems = computed<NavItem[]>(() => [
                 "
               >
                 <img
-                  src="/paw.png"
+                  src="/paw.svg"
                   alt=""
                   width="20"
                   height="20"

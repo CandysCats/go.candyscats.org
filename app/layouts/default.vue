@@ -68,7 +68,7 @@ function closeMobileMenu() {
                 "
               >
                 <img
-                  src="/paw.png"
+                  src="/paw.svg"
                   :alt="`${title} Logo`"
                   width="20"
                   height="20"
@@ -270,7 +270,7 @@ function closeMobileMenu() {
                 "
               >
                 <img
-                  src="/paw.png"
+                  src="/paw.svg"
                   :alt="`${title} Logo`"
                   width="20"
                   height="20"
